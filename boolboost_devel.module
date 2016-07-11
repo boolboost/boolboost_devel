@@ -1,0 +1,23 @@
+<?php
+/**
+ * @fiel
+ * boolboost_devel.module
+ *
+ * @author
+ * Name: Boolboost
+ * Web: http://boolboost.com
+ * Email: bool.boost@gmail.com
+ */
+
+/**
+ * Implements hook_watchdog().
+ */
+function boolboost_devel_watchdog(array $log_entry) {
+  if (in_array($log_entry['severity'], array(
+    WATCHDOG_ERROR,
+    WATCHDOG_WARNING,
+    WATCHDOG_CRITICAL
+  ))) {
+    dpm(ddebug_backtrace(TRUE));
+  }
+}

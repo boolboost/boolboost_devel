@@ -1,0 +1,6 @@
+name = Boolboost devel
+description = Настройки для devel
+package = Custom
+core = 7.x
+
+dependencies[] = devel
