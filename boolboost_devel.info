@@ -4,3 +4,4 @@ package = Custom
 core = 7.x
 
 dependencies[] = devel
+dependencies[] = devel_debug_log
