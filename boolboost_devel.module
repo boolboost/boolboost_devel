@@ -18,6 +18,6 @@ function boolboost_devel_watchdog(array $log_entry) {
     WATCHDOG_WARNING,
     WATCHDOG_CRITICAL
   ))) {
-    dpm(ddebug_backtrace(TRUE));
+    ddl(ddebug_backtrace(TRUE));
   }
 }
