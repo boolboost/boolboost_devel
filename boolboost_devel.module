@@ -15,6 +15,7 @@
 function boolboost_devel_watchdog(array $log_entry) {
   if (in_array($log_entry['severity'], array(
     WATCHDOG_ERROR,
+    WATCHDOG_NOTICE,
     WATCHDOG_WARNING,
     WATCHDOG_CRITICAL
   ))) {
